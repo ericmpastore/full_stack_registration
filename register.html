@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Easy Estimator Registration</title>
+            <link rel="stylesheet" href="ee.css">
+            <link rel="preconnect" href="https://www.google.com">
+            <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+            <script src="https://www.google.com/recaptcha/api.js" async defer>
+                
+            </script>
+            <script src="register.js" async defer>
+
+            </script>
+        </head>
+        <body>
+            <header>
+                <h1>Easy Estimator Registration</h1>
+            </header>
+
+            <form id="register" name="register" method="post" action="load.php">
+                <fieldset>
+                    <legend>Register</legend>
+
+                    <p>Complete all fields below to start an account and begin using Easy Estimator.</p>
+                    <ul>
+                        <li><label for="email">Email:</label></li>
+                        <li><input id="email" name="email"/></li>
+                        <li><label for="fullname">Name: </label></li>
+                        <li><input id="fullname" name="fullname"/></li>
+                        <li><label for="username">Username:</label></li>
+                        <li><input id="username" name="username"/></li>
+                        <li><label for="password">Password:</label></li>
+                        <li><input type="password" id="password" name="password"/></li>
+                        <li><label for="confirmpassword">Confirm Password:</label></li>
+                        <li><input type="password" id="confirmpassword" name="confirmpassword"/></li>
+                        <li><br/></li>
+                        <li><div class="g-recaptcha" data-sitekey="6LcBEmkiAAAAAA36lgVhxVmdKetecPWFGDFhXj-V"></div></li>
+                    </ul>
+                    <ul id="buttons">
+                        <li><input id="submit" type="submit" value="Submit"></li>
+                        <li><input type="reset" value="Reset"></li>
+                    </ul>
+                    <ul id="links">
+                        <li><a href="index.html">Login</a></li>
+                    </ul>
+                    <div id="alertMsg"></div>
+                </fieldset>
+            </form>
+            <footer>
+                <p>Copyright 2023 Eric M. Pastore. All Rights Reserved.</p>
+            </footer>
+        </body>
+    </html>
